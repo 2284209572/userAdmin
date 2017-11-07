@@ -1,0 +1,48 @@
+查询文件列表
+	ls /将列出根目录下的文件清单,如果给定已给参数,则命令行会把该参数当做命令行的工作目录;
+	ls -l /将给你列出一个更详细的文件清单
+	ls -a /将列出包括隐藏文件
+	ls -h /将以KS/MB/GB的形式给出文件大小
+	ls -p /显示文件类型
+
+文本文件操作
+	touch  test.txt /创建一个空的文本文件
+	cat test.txt /在终端上显示txt文本文件内容
+	cp test.txt test_copy.txt /复制文件
+	mv test.txt new_test.txt /移动文件//重命名
+	rm -i test.txt /删除文件夹
+
+目录
+	mkdir test /创建一个名为Test的文件夹
+	rm -R test /删除目录
+
+linux下安装谷歌
+	1、sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/
+	2、wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+	3、sudo apt-get update 
+	4、sudo apt-get install google-chadmin
+	rome-stable
+	5、/use/bin/google-chrome-stable
+
+Linux下安装sublime text 
+	1、wget https://download.sublimetext.com/sublime_text_3_build_3114_x64.tar.bz2
+	2、tar xvf sublime_text_3_build_3114_x64.tar.bz2
+	3、启动sublime_text<./sublime_text>
+
+
+常用修改权限的命令：
+	1、sudo chmod 600 文件名 （只有所有者有读和写的权限）
+	2、sudo chmod 644 文件名 （所有者有读和写的权限，组用户只有读的权限）
+	3、sudo chmod 700 文件名 （只有所有者有读和写以及执行的权限）
+	4、sudo chmod 666 文件名 （每个人都有读和写的权限）
+	5、sudo chmod 777 文件名 （每个人都有读和写以及执行的权限）
+
+
+
+//网上直销克隆路径	sudo git clone git@172.16.128.30:repository/netTrade
+
+
+
+//Linux下安装git 
+	1、sudo apt-get install git
+	2、安装完成后进行git配置，输入指令git config --global user.name "xxx"和 git config --global user.eamil "你的邮箱地址"
